@@ -1,0 +1,3 @@
+Resources:
+https://www.dataquest.io/blog/machine-learning-preparing-data/
+https://amueller.github.io/COMS4995-s18/slides/aml-08-021218-imputation-feature-selection/#32
