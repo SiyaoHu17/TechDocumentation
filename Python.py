@@ -1,3 +1,9 @@
+# materials:
+# book(python data analysis):https://seancheney.gitbook.io/python-for-data-analysis-2nd/
+
+
+
+
 import cx_Oracle as ora
 import pandas as pd
 
