@@ -50,4 +50,4 @@ df.sort_values(by=['col1'])
 nba["College"].fillna("No College", inplace = True)     
 df[df['Team'].str.contains('Boston') & df['Position'].str.contains('PG')]     
     
- 
+my_rounded_list = [ round(elem, 2) for elem in my_list ] 
