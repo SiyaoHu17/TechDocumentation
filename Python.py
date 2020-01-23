@@ -44,3 +44,10 @@ In [59]: df.plot(kind='scatter', x='c', y='d',
    ....:         color='DarkGreen', label='Group 2', ax=ax);
   
 https://stackoverflow.com/questions/40811592/pyplot-scatterdataframe-vs-dataframe-plotkind-scatter
+s.startswith('Python')
+s.startswith('is', 7, 10)
+df.sort_values(by=['col1'])
+nba["College"].fillna("No College", inplace = True)     
+df[df['Team'].str.contains('Boston') & df['Position'].str.contains('PG')]     
+    
+ 
