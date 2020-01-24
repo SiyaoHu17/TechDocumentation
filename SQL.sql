@@ -36,3 +36,15 @@ mode=ora.SYSDBA
 connection = ora.connect(username, password, connectString)
 
 data=pd.read_sql("SELECT * FROM ETLACH.STG_ACH_TRANSACTION LIMIT 10", con=connection)
+
+
+
+Oracle:
+select 1
+from dual 
+WHERE sysdate BETWEEN TO_DATE('28/02/2014', 'DD/MM/YYYY') AND TO_DATE('20/06/2014', 'DD/MM/YYYY');
+
+select 1
+from dual 
+WHERE trunc(sysdate) BETWEEN TO_DATE('28/02/2014', 'DD/MM/YYYY') AND
+                             TO_DATE('20/06/2014', 'DD/MM/YYYY');
