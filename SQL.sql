@@ -48,3 +48,9 @@ select 1
 from dual 
 WHERE trunc(sysdate) BETWEEN TO_DATE('28/02/2014', 'DD/MM/YYYY') AND
                              TO_DATE('20/06/2014', 'DD/MM/YYYY');
+
+
+SELECT MIN(TRANSACTION_EFFECTIVE_DATE),MAX(TRANSACTION_EFFECTIVE_DATE),trunc(sysdate, 'month'),add_months(trunc(sysdate, 'month'), -12),sysdate
+FROM ETLACH.STG_ACH_TRANSACTION 
+WHERE TRANSACTION_EFFECTIVE_DATE  
+between add_months(sysdate, -12) and sysdate
