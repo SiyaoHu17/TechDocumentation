@@ -55,3 +55,8 @@ my_rounded_list = [ round(elem, 2) for elem in my_list ]
 #drop columns
 df.drop(['B', 'C'], axis=1)
 
+
+import time
+start_time = time.time()
+main()
+print("--- %s seconds ---" % (time.time() - start_time))
