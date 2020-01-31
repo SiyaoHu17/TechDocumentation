@@ -60,3 +60,4 @@ CREATE TABLE new_table
   AS (SELECT * FROM old_table);
   
   
+rolling 12 month between add_months(trunc(sysdate, 'month'), -12) and trunc(sysdate, 'month')
