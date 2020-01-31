@@ -60,3 +60,37 @@ import time
 start_time = time.time()
 main()
 print("--- %s seconds ---" % (time.time() - start_time))
+
+
+
+data.groupby(
+    ['month', 'item']
+).agg(
+    {
+        # Find the min, max, and sum of the duration column
+        'duration': [min, max, sum],
+        # find the number of network type entries
+        'network_type': "count",
+        # minimum, first, and number of unique dates
+        'date': [min, 'first', 'nunique']
+    }
+    https://github.com/pandas-dev/pandas/issues/11292
+    https://stackoverflow.com/questions/10373660/converting-a-pandas-groupby-output-from-series-to-dataframe
+
+    
+    fuzzy matching
+    https://www.geeksforgeeks.org/fuzzywuzzy-python-library/
+    https://zhuanlan.zhihu.com/p/53135935
+    http://jonathansoma.com/lede/algorithms-2017/classes/fuzziness-matplotlib/fuzzing-matching-in-pandas-with-fuzzywuzzy/
+    
+    s1.str.contains('oG', case=True, regex=True)
+    
+    data.dropna()
+    https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
+
+    
+    df['year'] = pd.DatetimeIndex(df['ArrivalDate']).year
+df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
+    
+    
+    print data[['A', 'B']]
