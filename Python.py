@@ -1,6 +1,6 @@
 # materials:
 # book(python data analysis):https://seancheney.gitbook.io/python-for-data-analysis-2nd/
-
+#https://www.geeksforgeeks.org/
 
 
 
@@ -14,7 +14,7 @@ connectString="server:port/servicename"
 mode=ora.SYSDBA
 connection = ora.connect(username, password, connectString)
 data=pd.read_sql("SELECT * FROM VVIJAYAK.ACH_IN_OUT", con=connection)
-
+https://www.geeksforgeeks.org/sql-using-python/
 
 Basics:
 use len(df. index) for getting the number of rows, and len(df. columns) for the column count. 
@@ -73,7 +73,7 @@ data.groupby(
         'network_type': "count",
         # minimum, first, and number of unique dates
         'date': [min, 'first', 'nunique']
-    }
+    })
     https://github.com/pandas-dev/pandas/issues/11292
     https://stackoverflow.com/questions/10373660/converting-a-pandas-groupby-output-from-series-to-dataframe
 
@@ -94,3 +94,83 @@ df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
     
     
     print data[['A', 'B']]
+
+    
+    
+    
+#object
+test =  {'2', '1', '3'}
+s = ', '
+print(s.join(test))
+str1 = “Hello”
+str2 = “World”
+str1 + str2    
+
+x = ‘apples’
+y = ‘lemons’
+z = “In the basket are %s and %s” % (x,y)
+
+
+{0} {1} is {2} years old.” format(fname, lname, age)
+
+music = [“Metallica”, “Rolling Stones”, “ACDC”, “Black Sabbath”, “Shinedown”]
+‘ ’.join(music)
+    
+#List
+##python maximum number of expressions in a list is 1000
+##.tolist()    
+    
+    
+
+#DataFrame cleaning
+df=df.replace('\*','',regex=True).astype(float)
+pandas.Series.str.strip
+#https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.str.strip.html
+##split
+df['AB'].str.split(' ', 1, expand=True)
+data.dropna(inplace = True) 
+##remove character
+#https://towardsdatascience.com/5-methods-to-remove-the-from-your-data-in-python-and-the-fastest-one-281489382455
+
+
+
+#Dataframe manipulation
+#list to df
+pd.DataFrame(students) 
+pd.DataFrame(students, columns = ['Name' , 'Age', 'City'], index=['a', 'b', 'c']) 
+
+##indexing 
+###https://www.geeksforgeeks.org/indexing-and-selecting-data-with-pandas/
+data["Age"] #df
+data[["Age", "College", "Salary"]] 
+data.loc["Avery Bradley"] #series
+data.loc[["Avery Bradley", "R.J. Hunter"]] #df
+data.loc[["Avery Bradley", "R.J. Hunter"], 
+                   ["Team", "Number", "Position"]] 
+data.loc[:, ["Team", "Number", "Position"]] 
+data.iloc[3]  #row  object 
+data.iloc [[3, 5, 7]] 
+data.iloc [[3, 4], [1, 2]] 
+data.iloc [:, [1, 2]] 
+data.ix["Avery Bradley"] #row object
+data.ix[1] 
+
+df.append(df2, ignore_index = True) 
+df.sort_values(by=['DR_CR_CODE','TOTAL_AMOUNT'], ascending=[True, False], na_position='first')
+##iteration
+for index,row in df.iterrows():
+    df.loc[index,'d'] = np.random.randint(0, 10)
+df.set_index(['rollno','name'])
+list(data_top.index) 
+list(data_top.index.values) #index.values method returns an array of index.
+df.stack()
+
+data["Team"].str.split("t", n = 1, expand = True)
+
+
+#iPython
+##contain
+https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
+#contain 
+https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
+    
