@@ -39,7 +39,17 @@ data=pd.read_sql("SELECT * FROM ETLACH.STG_ACH_TRANSACTION LIMIT 10", con=connec
 
 
 
-Oracle:
+#Oracle:
+##time
+sysdate, sysdate -1
+
+##str
+SUBSTR('TechOnTheNet', 1, 4)
+
+##limit
+select fname from MyTbl where rownum = 1
+
+
 select 1
 from dual 
 WHERE sysdate BETWEEN TO_DATE('28/02/2014', 'DD/MM/YYYY') AND TO_DATE('20/06/2014', 'DD/MM/YYYY');
