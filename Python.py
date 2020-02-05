@@ -183,6 +183,8 @@ df.stack()
 
 data["Team"].str.split("t", n = 1, expand = True)
 
+DataFrame.apply(self, func, axis=0, raw=False, result_type=None, args=(), **kwds)[source]
+#Apply a function along an axis of the DataFrame
 
 #advanced
 ##mapreduce
