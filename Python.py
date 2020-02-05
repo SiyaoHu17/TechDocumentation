@@ -95,7 +95,19 @@ df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
     
     print data[['A', 'B']]
 
-    
+#iPython
+##contain
+https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
+##contain 
+https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
+##measure time
+###1
+import time
+start = time.time()
+elapsed_time_fl = (time.time() - start)  #0.144280910492
+###2
+%%time
+   
     
     
 #object
@@ -110,6 +122,8 @@ x = ‘apples’
 y = ‘lemons’
 z = “In the basket are %s and %s” % (x,y)
 
+my_string.split()[:4] # first 4 words
+
 
 {0} {1} is {2} years old.” format(fname, lname, age)
 
@@ -119,7 +133,9 @@ music = [“Metallica”, “Rolling Stones”, “ACDC”, “Black Sabbath”,
 #List
 ##python maximum number of expressions in a list is 1000
 ##.tolist()    
-    
+>>> l=['diffuse systemic sclerosis', 'back', 'public on july 15 2008']
+>>> [i.split()[0] for i in l]
+##['diffuse', 'back', 'public']    
     
 
 #DataFrame cleaning
@@ -168,9 +184,6 @@ df.stack()
 data["Team"].str.split("t", n = 1, expand = True)
 
 
-#iPython
-##contain
-https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
-#contain 
-https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
-    
+#advanced
+##mapreduce
+#https://towardsdatascience.com/a-beginners-introduction-into-mapreduce-2c912bb5e6ac
