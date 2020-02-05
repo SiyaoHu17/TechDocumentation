@@ -45,6 +45,8 @@ sysdate, sysdate -1
 
 ##str
 SUBSTR('TechOnTheNet', 1, 4)
+SELECT 'Smiths'''
+FROM dual;  #Smiths'
 
 ##limit
 select fname from MyTbl where rownum = 1
