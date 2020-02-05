@@ -97,9 +97,9 @@ df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
 
 #iPython
 ##contain
-https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
+###https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
 ##contain 
-https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
+###https://www.educative.io/edpresso/how-to-check-if-python-string-contains-another-string
 ##measure time
 ###1
 import time
@@ -107,8 +107,13 @@ start = time.time()
 elapsed_time_fl = (time.time() - start)  #0.144280910492
 ###2
 %%time
-   
-    
+##substring
+###https://codeigo.com/python/string-contains-a-substring
+my_substring.lower() in my_string.lower()
+my_string.startswith("this")
+my_string.endswith("text")   
+my_string.index("is")  
+my_string1.count("text")
     
 #object
 test =  {'2', '1', '3'}
@@ -147,13 +152,19 @@ df['AB'].str.split(' ', 1, expand=True)
 data.dropna(inplace = True) 
 ##remove character
 #https://towardsdatascience.com/5-methods-to-remove-the-from-your-data-in-python-and-the-fastest-one-281489382455
-
+##drop rows that contain...
+df[~df.Col.str.contains("XYZ")]
+df[~df['your column'].isin(['list of strings'])]
+s[s.str.contains('a|b'))]
+>>> searchfor = ['og', 'at']
+>>> s[s.str.contains('|'.join(searchfor))]
 
 
 #Dataframe manipulation
 #list to df
 pd.DataFrame(students) 
 pd.DataFrame(students, columns = ['Name' , 'Age', 'City'], index=['a', 'b', 'c']) 
+
 
 ##indexing 
 ###https://www.geeksforgeeks.org/indexing-and-selecting-data-with-pandas/
