@@ -200,3 +200,45 @@ DataFrame.apply(self, func, axis=0, raw=False, result_type=None, args=(), **kwds
 #advanced
 ##mapreduce
 #https://towardsdatascience.com/a-beginners-introduction-into-mapreduce-2c912bb5e6ac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Data Exploration
+# Import pandas package  
+import pandas as pd  
+    
+# making data frame  
+data = pd.read_csv("https://media.geeksforgeeks.org/wp-content/uploads/nba.csv")  
+    
+# calling head() method   
+# storing in new variable  
+data_top = data.head()  
+
+# row names
+list(data.columns) 
+list(data.columns.values) 
+list(data.columns.values.tolist()) 
+# iterating the columns 
+for col in data.columns: 
+    print(col) 
+    
+sorted(data) 
+
+#unique values
+# Create a list of unique values by turning the
+# pandas column into a set
+list(set(df.trucks))
+list(df['trucks'].unique())
