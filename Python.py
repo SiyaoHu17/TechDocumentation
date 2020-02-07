@@ -94,6 +94,18 @@ df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
     
     
     print data[['A', 'B']]
+    
+    
+    
+#SYS
+#Installing Python Packages from a Jupyter Notebook
+#https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/    
+# Install a pip package in the current Jupyter kernel
+import sys
+!{sys.executable} -m pip install numpy    
+    
+    
+    
 
 #iPython
 ##contain
