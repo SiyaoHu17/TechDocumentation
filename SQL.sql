@@ -71,5 +71,11 @@ between add_months(sysdate, -12) and sysdate
 CREATE TABLE new_table
   AS (SELECT * FROM old_table);
   
-  
+
+
+time
 rolling 12 month between add_months(trunc(sysdate, 'month'), -12) and trunc(sysdate, 'month')
+select to_char(sysdate, 'Month') from dual
+select to_char(to_date('15-11-2010', 'DD-MM-YYYY'), 'Month') from dual
+
+
