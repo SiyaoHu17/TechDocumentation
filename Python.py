@@ -1,7 +1,7 @@
 # materials:
 # book(python data analysis):https://seancheney.gitbook.io/python-for-data-analysis-2nd/
 #https://www.geeksforgeeks.org/
-
+#https://towardsdatascience.com/top-python-libraries-used-in-data-science-a58e90f1b4ba
 
 
 import cx_Oracle as ora
