@@ -170,13 +170,26 @@ df[~df['your column'].isin(['list of strings'])]
 s[s.str.contains('a|b'))]
 >>> searchfor = ['og', 'at']
 >>> s[s.str.contains('|'.join(searchfor))]
+df['column'] = df['column'].fillna(value)
+df.isnull().values.any()
+df['acct_num'] = df['acct_num'].astype('int64')
+>gapminder.rename(columns={'pop':'population',
+                          'lifeExp':'life_exp',
+                          'gdpPercap':'gdp_per_cap'}, 
+                 inplace=True)
+gapminder.rename(index={0:'zero',1:'one'}, inplace=True)
 
 
 #Dataframe manipulation
 #list to df
 pd.DataFrame(students) 
 pd.DataFrame(students, columns = ['Name' , 'Age', 'City'], index=['a', 'b', 'c']) 
-
+##merge join and concat
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html
+https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
+https://towardsdatascience.com/left-join-with-pandas-data-frames-in-python-c29c85089ba4
+https://jakevdp.github.io/PythonDataScienceHandbook/03.07-merge-and-join.html
+https://www.shanelynn.ie/merge-join-dataframes-python-pandas-index-1/
 
 ##indexing 
 ###https://www.geeksforgeeks.org/indexing-and-selecting-data-with-pandas/
@@ -254,3 +267,11 @@ sorted(data)
 # pandas column into a set
 list(set(df.trucks))
 list(df['trucks'].unique())
+
+#agg
+https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
+##groupby sort within groups
+https://stackoverflow.com/questions/27842613/pandas-groupby-sort-within-groups
+df.groupby('id').head(2).reset_index(drop=True)
+df.groupby('id')['value'].nlargest(2)
+df.sort_values([('Group1', 'C')], ascending=False)
