@@ -1,3 +1,11 @@
 Resources:
 https://www.dataquest.io/blog/machine-learning-preparing-data/
 https://amueller.github.io/COMS4995-s18/slides/aml-08-021218-imputation-feature-selection/#32
+
+
+For most "average" problems, you should have 10,000 - 100,000 examples. 
+For “hard” problems like machine translation, high dimensional data generation, or anything requiring deep learning, you should try to get 100,000 - 1,000,000 examples. 
+Generally, the more dimensions your data has, the more data you need.
+
+
+https://machinelearningmastery.com/an-introduction-to-feature-selection/
