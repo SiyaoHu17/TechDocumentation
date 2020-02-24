@@ -67,10 +67,34 @@ FROM ETLACH.STG_ACH_TRANSACTION
 WHERE TRANSACTION_EFFECTIVE_DATE  
 between add_months(sysdate, -12) and sysdate
 
-
+#create table
 CREATE TABLE new_table
   AS (SELECT * FROM old_table);
-  
+#join
+SELECT
+    Booking.Booking_ID,
+    .,
+    .,
+    .
+FROM
+    Passengers LEFT JOIN  Booking ON 
+        Passengers.Booking_ID= Booking.Booking_ID 
+    INNER JOIN Segments ON
+        Booking.Booking_ID = Segments.Booking_ID    
+    INNER JOIN Fares ON
+        Fares.Booking_ID = Passengers.Booking_ID
+WHERE
+    Booking.ClientID = '044'
+    AND Booking.Booking_ID = 'NBAB3'
+
+# group by
+SELECT department, class, MAX(number) AS “Highest number of students”
+
+FROM students
+
+GROUP BY department, class;
+##need to by all col in select
+
 
 
 time
