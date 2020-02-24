@@ -24,6 +24,7 @@ pd.DataFrame({'A' : []})
 pd.DataFrame({'A' : [np.nan]})
 pd.DataFrame(data, index=index, columns=columns)
 df.reset_index(drop=True)
+list.remove('dog')
 
 For loop:
 for i in range(len(colors)):
@@ -178,6 +179,13 @@ df['acct_num'] = df['acct_num'].astype('int64')
                           'gdpPercap':'gdp_per_cap'}, 
                  inplace=True)
 gapminder.rename(index={0:'zero',1:'one'}, inplace=True)
+df.drop_duplicates()
+df.drop_duplicates(keep='last')
+df['column'] = df['column'].replace(np.nan, 0)
+df[1].fillna(0, inplace=True)
+
+
+
 
 
 #Dataframe manipulation
@@ -247,7 +255,10 @@ import pandas as pd
     
 # making data frame  
 data = pd.read_csv("https://media.geeksforgeeks.org/wp-content/uploads/nba.csv")  
-    
+
+# basics
+##number of item in list python
+len(list)
 # calling head() method   
 # storing in new variable  
 data_top = data.head()  
@@ -275,3 +286,6 @@ https://stackoverflow.com/questions/27842613/pandas-groupby-sort-within-groups
 df.groupby('id').head(2).reset_index(drop=True)
 df.groupby('id')['value'].nlargest(2)
 df.sort_values([('Group1', 'C')], ascending=False)
+df.groupby(level=0).mean()
+df.groupby(level="Type").mean()
+
