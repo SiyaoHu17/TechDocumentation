@@ -1,0 +1,4 @@
+            visGroups(groupname = "Deposits", color = "gold") %>%
+            visGroups(groupname = "CNB", color = "lightgreen") %>%
+            visGroups(groupname = "Lending", color = "lightpink") %>%
+            visGroups(groupname = "NC - Type", color = "lightblue") %>%
