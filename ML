@@ -9,3 +9,40 @@ Generally, the more dimensions your data has, the more data you need.
 
 
 https://machinelearningmastery.com/an-introduction-to-feature-selection/
+
+label encoding
+https://docs.w3cub.com/scikit_learn/modules/generated/sklearn.preprocessing.onehotencoder/
+https://stackoverflow.com/questions/54570947/feature-names-from-onehotencoder
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
+https://stackoverflow.com/questions/56338847/how-to-give-column-names-after-one-hot-encoding-with-sklearn
+https://medium.com/@contactsunny/label-encoder-vs-one-hot-encoder-in-machine-learning-3fc273365621
+
+
+
+imbalanced data
+https://stats.stackexchange.com/questions/262616/roc-vs-precision-recall-curves-on-imbalanced-dataset
+
+
+
+
+
+Tunning for decision tree
+https://medium.com/@mohtedibf/indepth-parameter-tuning-for-decision-tree-6753118a03c3
+https://machinelearningmastery.com/tune-number-size-decision-trees-xgboost-python/
+https://towardsdatascience.com/fine-tuning-xgboost-in-python-like-a-boss-b4543ed8b1e
+https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
+https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
+
+
+
+
+cross validation
+https://scikit-learn.org/stable/modules/cross_validation.html
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+https://stackoverflow.com/questions/29438265/stratified-train-test-split-in-scikit-learn
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html
+
+
+
+feature importance
+https://stackoverflow.com/questions/51905524/plot-importance-variables-xgboost-python
