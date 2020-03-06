@@ -154,7 +154,11 @@ music = [“Metallica”, “Rolling Stones”, “ACDC”, “Black Sabbath”,
 >>> l=['diffuse systemic sclerosis', 'back', 'public on july 15 2008']
 >>> [i.split()[0] for i in l]
 ##['diffuse', 'back', 'public']    
-    
+
+
+#array
+#replace parts of strings in NumPy array
+#https://stackoverflow.com/questions/21385673/shortest-way-to-replace-parts-of-strings-in-numpy-array    
 
 #DataFrame cleaning
 df=df.replace('\*','',regex=True).astype(float)
@@ -198,7 +202,10 @@ https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
 https://towardsdatascience.com/left-join-with-pandas-data-frames-in-python-c29c85089ba4
 https://jakevdp.github.io/PythonDataScienceHandbook/03.07-merge-and-join.html
 https://www.shanelynn.ie/merge-join-dataframes-python-pandas-index-1/
-
+##concat
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html
+    
+    
 ##indexing 
 ###https://www.geeksforgeeks.org/indexing-and-selecting-data-with-pandas/
 data["Age"] #df
