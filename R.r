@@ -14,3 +14,8 @@ isFALSE(x)
 
 #explore data
 mtcars[order(mpg, -cyl),]
+
+
+#shiny
+#https://www.rdocumentation.org/packages/shinyWidgets/versions/0.5.0/topics/updatePickerInput
+#http://shinyapps.dreamrs.fr/shinyWidgets/
