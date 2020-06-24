@@ -47,6 +47,7 @@ https://stackoverflow.com/questions/29438265/stratified-train-test-split-in-scik
 https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html
 with upsampling
 https://medium.com/lumiata/cross-validation-for-imbalanced-datasets-9d203ba47e8
+https://github.com/lumiata/tech_blog/blob/master/Cross_Validation_Imbalanced_Datasets/cross-validation.ipynb
 with feature selection
 http://thatdatatho.com/2018/10/04/cross-validation-the-wrong-way-right-way-feature-selection/
 
