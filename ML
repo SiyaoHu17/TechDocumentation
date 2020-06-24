@@ -1,3 +1,6 @@
+pip: !pip install -U imbalanced-learn
+
+
 Resources:
 https://www.dataquest.io/blog/machine-learning-preparing-data/
 https://amueller.github.io/COMS4995-s18/slides/aml-08-021218-imputation-feature-selection/#32
@@ -42,8 +45,17 @@ https://scikit-learn.org/stable/modules/cross_validation.html
 https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
 https://stackoverflow.com/questions/29438265/stratified-train-test-split-in-scikit-learn
 https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html
+with upsampling
+https://medium.com/lumiata/cross-validation-for-imbalanced-datasets-9d203ba47e8
+with feature selection
+http://thatdatatho.com/2018/10/04/cross-validation-the-wrong-way-right-way-feature-selection/
 
 
 
 feature importance
 https://stackoverflow.com/questions/51905524/plot-importance-variables-xgboost-python
+https://github.com/lumiata/tech_blog/blob/master/Cross_Validation_Imbalanced_Datasets/cross-validation.ipynb
+
+
+visualize decision tree
+https://towardsdatascience.com/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-1c50b4aa68dc
